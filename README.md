@@ -1,5 +1,5 @@
 
-The official implementation of AAAI2025 paper "DSRC: Learning Density-insensitive and Semantic-aware V2X Collaborative Representation against Corruptions.".![DSRC_Overview](https://github.com/easy2star/DSRC_plus_plus/edit/main//structures_trans.png)
+The official implementation of AAAI2025 paper "DSRC: Learning Density-insensitive and Semantic-aware V2X Collaborative Representation against Corruptions.".![DSRC_Overview](https://github.com/easy2star/DSRC_plus_plus/blob/main/structures_trans.png)
 
 > [**DSRC: Learning Density-insensitive and Semantic-aware V2X Collaborative Representation against Corruptions**](https://arxiv.org/abs/2412.10739), <br>
 > Jingyu Zhang* , Yilei Wang*, Lang Qian, Peng Sun, Zengwen Li†,Sudong Jiang, Maolin Liu, Liang Song† <br>
