@@ -1,13 +1,16 @@
+The official implementation of the paper "Effective Multi-Agent Collaborative Perception with Robust Representation Learning.".![DSRC_Overview](https://github.com/Terry9a/DSRC/blob/main/image.png)
 
-The official implementation of AAAI2025 paper "DSRC: Learning Density-insensitive and Semantic-aware V2X Collaborative Representation against Corruptions.".![DSRC_Overview](https://github.com/Terry9a/DSRC/blob/main/image.png)
-
-> [**DSRC: Learning Density-insensitive and Semantic-aware V2X Collaborative Representation against Corruptions**](https://arxiv.org/abs/2412.10739), <br>
-> Jingyu Zhang* , Yilei Wang*, Lang Qian, Peng Sun, Zengwen Li†,Sudong Jiang, Maolin Liu, Liang Song† <br>
-> Accepted by AAAI2025
+> **Effective Multi-Agent Collaborative Perception with
+> Robust Representation Learning**, <br>
+> Jingyu Zhang, Yilei Wang, Hanqi Wang, Xu Deng, Peng Sun, Liang Song† <br>
 
 ## Abstract
 
-As a potential application of Vehicle-to-Everything (V2X) communication, multi-agent collaborative perception has achieved significant success in 3D object detection. While these methods have demonstrated impressive results on standard benchmarks, the robustness of such approaches in the face of complex real-world environments requires additional verification. To bridge this gap, we introduce the first comprehensive benchmark designed to evaluate the robustness of collaborative perception methods in the presence of natural corruptions typical of real-world environments. Furthermore, we propose DSRC, a robustness-enhanced collaborative perception method aiming to learn Densityinsensitive and Semantic-aware collaborative Representation against Corruptions. DSRC consists of two key designs: i) a semantic-guided sparse-to-dense distillation framework, which constructs multi-view dense objects painted by ground truth bounding boxes to effectively learn density insensitive and semantic-aware collaborative representation; ii) a feature-to-point cloud reconstruction approach to better fuse critical collaborative representation across agents. To thoroughly evaluate DSRC, we conduct extensive experiments on real-world and simulated datasets. The results demonstrate that our method outperforms SOTA collaborative perception methods in both clean and corrupted conditions.
+As a promising application of Vehicle-to-Everything (V2X) communication, multi-agent collaborative perception has shown significant progress in 3D object detection. While these methods have achieved remarkable performance on standard benchmarks, their robustness in complex, real-world environments remains to be further validated.
+To address this gap, we introduce the first comprehensive benchmark specifically tailored to assess the robustness of collaborative perception methods in the presence of real-world natural corruptions.
+Furthermore, we propose DSRC++, a robustness-enhanced collaborative perception method against corruptions. DSRC++ consists of four key designs.
+First, we employ a sparse-to-dense learning mechanism to extract reliable 3D features in the latent space, addressing the challenges posed by sparse point cloud dcloudata under adverse environmental conditions. Second, we leverage a semantic-guided learning strategy to preserve semantic consistency in corrupted scenarios. This strategy uses ground truth labels to impart category-specific semantic information to teacher point cloud, enabling the student model to effectively learn comprehensive semantic representations. Third, we introduce a cross-scale attention fusion module to integrate contextual information across multiple scales. Finally, our method incorporates a feature-to-point cloud reconstruction module, which imposes regularization constraints on the feature learning process.
+To thoroughly evaluate DSRC++, we conduct extensive experiments on real-world and simulated datasets. The results demonstrate that our method outperforms SOTA collaborative perception methods in both clean and corrupted conditions.
 
 ## Installation
 
@@ -35,6 +38,7 @@ python setup.py develop
 All the data can be downloaded from [google drive](https://drive.google.com/drive/folders/1dkDeHlwOVbmgXcDazZvO6TFEZ6V_7WUu). If you have a good internet, you can directly
 download the complete large zip file such as `train.zip`. In case you suffer from downloading large files, we also split each data set into small chunks, which can be found 
 in the directory ending with `_chunks`, such as `train_chunks`. After downloading, please run the following command to each set to merge those chunks together:
+
 ```python
 cat train.zip.part* > train.zip
 unzip train.zip
@@ -89,6 +93,6 @@ If you want to test the performance of the model in different environments, you 
   journal={arXiv preprint arXiv:2412.10739},
   year={2024}
 }
-```
+  ```
 ## Acknowledgment
 Many thanks to the high-quality dataset and codebase, including [Robo3D](https://github.com/ldkong1205/Robo3D), [OpenCOOD](https://github.com/DerrickXuNu/OpenCOOD) and  [Where2comm](https://github.com/MediaBrain-SJTU/Where2comm.git).
