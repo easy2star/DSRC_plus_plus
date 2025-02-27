@@ -1,7 +1,9 @@
-The official implementation of the paper "Effective Multi-Agent Collaborative Perception with Robust Representation Learning.".![DSRC_Overview](https://github.com/Terry9a/DSRC/blob/main/image.png)
+The official implementation of the paper "Effective Multi-Agent Collaborative Perception with Robust Representation Learning.".![DSRC_Overview](https://github.com/easy2star/DSRC_plus_plus/blob/main/structures_trans.png)
 
 **Effective Multi-Agent Collaborative Perception with
-Robust Representation Learning**, <br>Jingyu Zhang, Yilei Wang, Hanqi Wang, Xu Deng, Peng Sun, Liang Song† <br>
+Robust Representation Learning**, <br>
+
+Jingyu Zhang, Yilei Wang, Hanqi Wang, Xu Deng, Peng Sun, Liang Song† <br>
 
 ## Abstract
 
