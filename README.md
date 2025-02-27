@@ -1,8 +1,7 @@
 The official implementation of the paper "Effective Multi-Agent Collaborative Perception with Robust Representation Learning.".![DSRC_Overview](https://github.com/Terry9a/DSRC/blob/main/image.png)
 
-> **Effective Multi-Agent Collaborative Perception with
-> Robust Representation Learning**, <br>
-> Jingyu Zhang, Yilei Wang, Hanqi Wang, Xu Deng, Peng Sun, Liang Song† <br>
+**Effective Multi-Agent Collaborative Perception with
+Robust Representation Learning**, <br>Jingyu Zhang, Yilei Wang, Hanqi Wang, Xu Deng, Peng Sun, Liang Song† <br>
 
 ## Abstract
 
@@ -11,6 +10,8 @@ To address this gap, we introduce the first comprehensive benchmark specifically
 Furthermore, we propose DSRC++, a robustness-enhanced collaborative perception method against corruptions. DSRC++ consists of four key designs.
 First, we employ a sparse-to-dense learning mechanism to extract reliable 3D features in the latent space, addressing the challenges posed by sparse point cloud dcloudata under adverse environmental conditions. Second, we leverage a semantic-guided learning strategy to preserve semantic consistency in corrupted scenarios. This strategy uses ground truth labels to impart category-specific semantic information to teacher point cloud, enabling the student model to effectively learn comprehensive semantic representations. Third, we introduce a cross-scale attention fusion module to integrate contextual information across multiple scales. Finally, our method incorporates a feature-to-point cloud reconstruction module, which imposes regularization constraints on the feature learning process.
 To thoroughly evaluate DSRC++, we conduct extensive experiments on real-world and simulated datasets. The results demonstrate that our method outperforms SOTA collaborative perception methods in both clean and corrupted conditions.
+
+
 
 ## Installation
 
